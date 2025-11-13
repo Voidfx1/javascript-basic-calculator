@@ -4,15 +4,16 @@ function calculate(operation) {
     let result;
     
     //TODO: uncomment the following code, and validate the numbers are not empty
-    // if (input1 === "" || input2 === "") {
-    //     alert("Please enter both numbers.");
-    //     return;
-    // }
+    if (input1 === "" || input2 === "") {
+        alert("Please enter both numbers.");
+        return;
+    }
 
     const num1 = parseFloat(input1);
     const num2 = parseFloat(input2);
     //TODO: your code here, add the 2 numbers
     
+    result = num1 + num2;
 
     document.getElementById("result").textContent = result;
 }
