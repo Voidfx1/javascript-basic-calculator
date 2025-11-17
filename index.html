@@ -29,34 +29,34 @@
             </div>  
             <div class="first-row">
                 <input type="text" name="result" id="result" placeholder="Result" readonly />
-                <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+                <input type="button" value="C" onclick="clearScreen()" id="clear-button" />
             </div>
             <div class="second-row">
-                <input type="button" value="1" onclick="liveScreen(1)" />
-                <input type="button" value="2" onclick="liveScreen(2)" />
-                <input type="button" value="3" onclick="liveScreen(3)" />
-                <input type="button" value="+" onclick="liveScreen('+')" />
+                <input type="button" value="1" onclick="inputValue('1')" />
+                <input type="button" value="2" onclick="inputValue('2')" />
+                <input type="button" value="3" onclick="inputValue('3')" />
+                <input type="button" value="+" onclick="inputValue('+')" />
             </div>
             <div class="third-row">
-                <input type="button" value="4" onclick=" liveScreen(4)" />
-                <input type="button" value="5" onclick=" liveScreen(5)" />
-                <input type="button" value="6" onclick=" liveScreen(6)" />
-                <input type="button" value="-" onclick="liveScreen('-')" />
+                <input type="button" value="4" onclick="inputValue('4')" />
+                <input type="button" value="5" onclick="inputValue('5')" />
+                <input type="button" value="6" onclick="inputValue('6')" />
+                <input type="button" value="-" onclick="inputValue('-')" />
             </div>
             <div class="fourth-row">
-                <input type="button" value="7" onclick="liveScreen(7)" />
-                <input type="button" value="8" onclick="liveScreen(8)" />
-                <input type="button" value="9" onclick=" liveScreen(9)" />
-                <input type="button" value="x" onclick="liveScreen('*')" />
+                <input type="button" value="7" onclick="inputValue('7')" />
+                <input type="button" value="8" onclick="inputValue('8')" />
+                <input type="button" value="9" onclick="inputValue('9')" />
+                <input type="button" value="x" onclick="inputValue('*')" />
             </div>
             <div class="fifth-row">
-                <input type="button" value="/" onclick="liveScreen('/')" />
-                <input type="button" value="0" onclick="liveScreen(0)" />
-                <input type="button" value="." onclick="liveScreen('.')" />
-                <input type="button" value="=" onclick="calculate(result.value)" />
+                <input type="button" value="/" onclick="inputValue('/')" />
+                <input type="button" value="0" onclick="inputValue('0')" />
+                <input type="button" value="." onclick="inputValue('.')" />
+                <input type="button" value="=" onclick="showResult()" />
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
